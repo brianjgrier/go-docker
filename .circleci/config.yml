@@ -32,5 +32,5 @@ jobs:
             #  docker build -t ${DOCKER_REPO} .
               docker build -t ${DOCKER_USER}/${DOCKER_REPO}:latest .
               docker login -u ${DOCKER_USER} -p ${DOCKER_PASS} https://index.docker.io/v1/
-              docker push  ${DOCKER_USER}/{$DOCKER_REPO}:latest
+              docker push  ${DOCKER_USER}/${DOCKER_REPO}:latest
             fi
