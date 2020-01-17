@@ -30,7 +30,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
             #  docker build -t ${DOCKER_REPO} .
-              docker build -t brianjgrier/mytestrepo/go-docker:latest .
+              docker build -t brianjgrier/go-docker:latest .
               docker login -u ${DOCKER_USER} -p ${DOCKER_PASS} https://index.docker.io/v1/
-              docker push brianjgrier/mytestrepo/go-docker:latest
+              docker push brianjgrier/go-docker:latest
             fi
